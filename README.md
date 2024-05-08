@@ -12,4 +12,4 @@ USAGE
 
 Authors
 
-Burak Hazır , Kübra Göncüler , Emin Gunaydi
+Burak Hazır , Kübra Göncüler 
