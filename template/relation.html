@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/relationSytle.css" rel="stylesheet">
+    <title>Detail</title>
+</head>
+<body>
+    
+   
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <div class="card-content">
+                <h5 class="card-title">Location</h5>
+               {{range $location, $date := .DatesLocations}}
+                {{$location}}<br>
+                {{end}} 
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+           <div class="card-content">
+                <h5 class="card-title">Dates</h5>
+                {{range $location, $date := .DatesLocations}}
+                {{range $date}}
+                 {{.}}<br>
+                {{end}}
+                {{end}}
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+            <div class="card-content">
+                <h5 class="card-title">Relation</h5>
+                {{range $location, $date := .DatesLocations}}
+                {{$location}}<br>
+                {{range $date}}
+                {{.}}<br>
+                {{end}}
+                {{end}}
+
+              
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
